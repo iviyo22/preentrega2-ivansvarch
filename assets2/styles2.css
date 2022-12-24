@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr repeat(3, 100%);
+    grid-template-areas:
+
+
+    "head"
+    "logp"
+    "logs"
+    "footer"
+
+    
+    
+    
+    
+    ;
+   
+}
+
+
+.header{
+    grid-area: head;
+    background-color:yellow;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  
+ 
+ 
+}
+
+.header_prueba{
+    width: 30%;
+    padding: 10px;
+    height: 100px;
+}
+
+
+.logo-principal{
+    grid-area: logp;
+    background-color: violet;
+
+}
+
+.logo-secundario{
+ grid-area: logs;
+ background-color: darkorange;
+}
+
+.menu1{
+    grid-area: menu1;
+    background-color:brown;
+
+}
+
+
+.info1{
+    grid-area: info1;
+    background-color: green;
+
+}
+
+.info2{
+    grid-area: info2;
+    background-color: darkgrey;
+
+}
+
+
+.footer{
+    grid-area: footer;
+    background-color: aquamarine;
+
+}
+.footer ul li{
+    display: inline-block;
+    
+}
+
+.img_pre{
+    height: 100px;
+    border: 1px solid black;
+ 
+}
