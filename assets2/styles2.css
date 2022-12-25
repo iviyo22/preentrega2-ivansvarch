@@ -3,88 +3,60 @@
     padding: 0;
 }
 
-#container{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 2fr repeat(3, 100%);
-    grid-template-areas:
+    #container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 2fr 50% 25% 25%;
+        grid-template-areas: 
 
+        "cabe"
+        "barra"
+        "redes"
+        "footer"
+        
+        ;
 
-    "head"
-    "logp"
-    "logs"
-    "footer"
+    }
+    .cabecera{
+        grid-area: cabe;
+        background-color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+        gap: 15px;
+    }
+        .cabecera__container {
+            padding: 10px;
+            text-align: center;
+            height: 100px;
+    }
 
+    .img-preview{
+        height: 100px;
+    }
     
-    
-    
-    
-    ;
-   
-}
 
+    .barra{
+        grid-area: barra;
+        background-color: yellow;
 
-.header{
-    grid-area: head;
-    background-color:yellow;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  
- 
- 
-}
+    }
 
-.header_prueba{
-    width: 30%;
-    padding: 10px;
-    height: 100px;
-}
+    .redes{
+        grid-area: redes;
+        background-color: red;
 
+    }
 
-.logo-principal{
-    grid-area: logp;
-    background-color: violet;
+    .galeria{
+        grid-area: gale;
+        background-color: green;
+    }
 
-}
+    .footer{
+        grid-area: footer;
+        background-color: brown;
 
-.logo-secundario{
- grid-area: logs;
- background-color: darkorange;
-}
+    }
 
-.menu1{
-    grid-area: menu1;
-    background-color:brown;
-
-}
-
-
-.info1{
-    grid-area: info1;
-    background-color: green;
-
-}
-
-.info2{
-    grid-area: info2;
-    background-color: darkgrey;
-
-}
-
-
-.footer{
-    grid-area: footer;
-    background-color: aquamarine;
-
-}
-.footer ul li{
-    display: inline-block;
-    
-}
-
-.img_pre{
-    height: 100px;
-    border: 1px solid black;
- 
-}
