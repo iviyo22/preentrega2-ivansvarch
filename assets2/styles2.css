@@ -1,62 +1,241 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-    #container{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 2fr 50% 25% 25%;
-        grid-template-areas: 
+#container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:25% 25% 25% 25%;
+    grid-template-areas:
 
         "cabe"
         "barra"
         "redes"
         "footer"
-        
+
+    ;
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    #container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-areas:
+
+            "cabe"
+            "barra"
+            "redes"
+            "footer"
+
         ;
 
     }
-    .cabecera{
+}
+
+@media only screen and (min-width: 1280px) {
+    #container {
+        display: grid;
+        grid-template-columns: 25%;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+
+            "cabe  cabe barra barra"
+            "redes redes redes redes"
+            "gale gale gale gale"
+            "footer footer footer footer"
+
+        ;
+
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+    .cabecera {
         grid-area: cabe;
-        background-color: aliceblue;
+        background-color:lightgray;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;    
-        gap: 15px;
+        align-items: center;
+        gap: 50px;
     }
-        .cabecera__container {
-            padding: 10px;
-            text-align: center;
-            height: 100px;
+}
+
+@media only screen and (min-width: 1280px) {
+
+    .cabecera {
+        flex-direction:row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+        
+    }
+}
+.cabecera{
+    background-color: lightgray;
+}
+
+
+
+.cabecera__container {
+    padding: 10px;
+    text-align: center;
+    height: 100px;
+
+}
+
+.cabecera__container2 {
+    padding: 10px;
+    text-align: center;
+    height: 100px;
+    display: none;
+}
+
+.cabecera__container3 {
+    padding: 10px;
+    text-align: center;
+    height: 100px;
+    display: none;
+}
+
+.img-preview {
+    height: 150px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .cabecera__container2 {
+        display: block;
     }
 
-    .img-preview{
-        height: 100px;
+    .cabecera__container3 {
+        display: block;
     }
+
+    .img-preview {
+        height: 120px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+
+    .cabecera__container2 {
+        display: none;
+    }
+
+    .cabecera__container3 {
+        display: none;
+    }
+
+    .img-preview {
+        height: 150px;
+    }
+}
+/* Fin cabecera */
+.barra {
+    grid-area: barra;
+    background-color:lightgray;
+    padding-top: 60px;
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .barra {
+        padding-left: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 1280px) {
+
+    .barra {
+        padding-right: 35px     ;
+    }
+}
+
+/* Fin barra */
+.horarios {
+    background-color: lightgray;
+    grid-area: redes;
+    padding-bottom: 100%;
+
+}
+.horarios p{
+text-align: center;
+
+
+}
+
+@media only screen and (min-width: 1280px) {
+    .horarios{
+     background-image: url("https://cdn.pixabay.com/photo/2017/08/10/07/20/grocery-store-2619380_960_720.jpg");
+    background-size:cover;
+  padding-bottom: 1%;
+  padding-top: 50%;
+
+  margin-bottom: 5px;
     
+}
 
-    .barra{
-        grid-area: barra;
-        background-color: yellow;
+.horarios p{
+    text-align: center;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkred;
+    border-radius: 5px solid dashed red;
+    background-color: black;
+    box-shadow: white 1px 2px;
+    margin-left:  350px;
+    margin-right: 350px;
+   
+    
+}
+}
+/* Fin horarios */
+.galeria {
+   display: none;
+}
 
-    }
-
-    .redes{
-        grid-area: redes;
-        background-color: red;
-
-    }
-
-    .galeria{
+@media only screen and (min-width: 1280px) {
+    .galeria {
         grid-area: gale;
-        background-color: green;
-    }
+       display: inline-block;
+        
 
-    .footer{
-        grid-area: footer;
-        background-color: brown;
 
     }
+}
 
+/* Fin galeria */
+.footer {
+    grid-area: footer;
+    background-color:black;
+   padding-top: 10px;
+   padding-bottom: 2px;
+
+}
+.footer ul li {
+    list-style-type: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+@media only screen and (min-width: 1280px) {
+    .footer {
+       padding-top: 150px;
+    }
+    .footer ul li{
+        font-size: 30px;
+        color: beige;
+    }
+    .footer ul li a{
+        text-decoration: none;
+    }
+}
