@@ -6,7 +6,7 @@
 #container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows:25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
     grid-template-areas:
 
         "cabe"
@@ -59,7 +59,7 @@
 
     .cabecera {
         grid-area: cabe;
-        background-color:lightgray;
+        background-color: lightgray;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -71,14 +71,15 @@
 @media only screen and (min-width: 1280px) {
 
     .cabecera {
-        flex-direction:row;
+        flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
-        
-        
+
+
     }
 }
-.cabecera{
+
+.cabecera {
     background-color: lightgray;
 }
 
@@ -138,10 +139,11 @@
         height: 150px;
     }
 }
+
 /* Fin cabecera */
 .barra {
     grid-area: barra;
-    background-color:lightgray;
+    background-color: lightgray;
     padding-top: 60px;
 
 }
@@ -157,7 +159,7 @@
 @media only screen and (min-width: 1280px) {
 
     .barra {
-        padding-right: 35px     ;
+        padding-right: 35px;
     }
 }
 
@@ -168,47 +170,49 @@
     padding-bottom: 100%;
 
 }
-.horarios p{
-text-align: center;
+
+.horarios p {
+    text-align: center;
 
 
 }
 
 @media only screen and (min-width: 1280px) {
-    .horarios{
-     background-image: url("https://cdn.pixabay.com/photo/2017/08/10/07/20/grocery-store-2619380_960_720.jpg");
-    background-size:cover;
-  padding-bottom: 1%;
-  padding-top: 50%;
+    .horarios {
+        background-image: url("https://cdn.pixabay.com/photo/2017/08/10/07/20/grocery-store-2619380_960_720.jpg");
+        background-size: cover;
+        padding-bottom: 1%;
+        padding-top: 50%;
 
-  margin-bottom: 5px;
-    
+        margin-bottom: 5px;
+
+    }
+
+    .horarios p {
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: darkred;
+        border-radius: 5px solid dashed red;
+        background-color: black;
+        box-shadow: white 1px 2px;
+        margin-left: 350px;
+        margin-right: 350px;
+
+
+    }
 }
 
-.horarios p{
-    text-align: center;
-    font-size: 25px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: darkred;
-    border-radius: 5px solid dashed red;
-    background-color: black;
-    box-shadow: white 1px 2px;
-    margin-left:  350px;
-    margin-right: 350px;
-   
-    
-}
-}
 /* Fin horarios */
 .galeria {
-   display: none;
+    display: none;
 }
 
 @media only screen and (min-width: 1280px) {
     .galeria {
         grid-area: gale;
-       display: inline-block;
-        
+        display: inline-block;
+
 
 
     }
@@ -217,99 +221,106 @@ text-align: center;
 /* Fin galeria */
 .footer {
     grid-area: footer;
-    background-color:black;
-   padding-top: 10px;
-   padding-bottom: 2px;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 2px;
 
 }
+
 .footer ul li {
     list-style-type: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
 }
+
 @media only screen and (min-width: 1280px) {
     .footer {
-       padding-top: 150px;
+        padding-top: 150px;
     }
-    .footer ul li{
+
+    .footer ul li {
         font-size: 30px;
         color: beige;
     }
-    .footer ul li a{
+
+    .footer ul li a {
         text-decoration: none;
     }
 }
+
 /* FIN DE INICIO  */
 
 /* Principio de contacto */
 
-#contenedor__con{
+#contenedor__con {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 3fr 70% 30%;
     grid-template-areas:
-    "cabe-c"
-    "form"
-  
-    "footer-c"
+        "cabe-c"
+        "form"
+
+        "footer-c"
 
     ;
-  
+
 
 }
 
 @media only screen and (min-width: 1280px) {
-    #contenedor__con{
+    #contenedor__con {
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 2fr 80% 20%;
         grid-template-areas:
-        "cabe-c"
-        "form"
-        "footer-c"
-    
+            "cabe-c"
+            "form"
+            "footer-c"
+
         ;
-      
-    
+
+
     }
 
 }
+
 /* Principio cabecera1 */
-.cabe__con{
+.cabe__con {
     grid-area: cabe-c;
     text-align: center;
- padding: 10px;
- background-color: darkgray;
-    
-    
+    padding: 10px;
+    background-color: darkgray;
+
+
 
 }
 
-.cabe__con a{
-  position: absolute;
-  top: 10px ;
-  left: 10px;
-  text-decoration: none;
-  color: darkblue;
+.cabe__con a {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    color: darkblue;
 }
+
 /* Fin cabecera1 */
 
-.img-preview-2{
+.img-preview-2 {
     height: 100px;
 }
 
-.img-preview-3{
+.img-preview-3 {
     height: 100px;
     display: none;
 }
 
-.img-preview-4{
+.img-preview-4 {
     height: 100px;
     display: none;
 }
 
 @media only screen and (min-width: 1280px) {
-    .img-flex{
+    .img-flex {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -318,40 +329,43 @@ text-align: center;
         margin-top: 25px;
     }
 
-    .img-preview-2{
+    .img-preview-2 {
         display: flex;
     }
-    .img-preview-3{
+
+    .img-preview-3 {
         display: flex;
     }
-    .img-preview-4{
+
+    .img-preview-4 {
         display: flex;
     }
 }
+
 /* Fin cabecera2 */
 
 /* Principio formulario */
-.formulario{
+.formulario {
     grid-area: form;
-    background-color:darkgray;
+    background-color: darkgray;
     padding-bottom: 20px;
-    
-  
 
 
-    
+
+
+
 }
 
 
-.formulario--1{
+.formulario--1 {
     padding: 30px;
     text-align: center;
-  
- 
+
+
 }
 
 @media only screen and (min-width: 1280px) {
-    .formulario--1{
+    .formulario--1 {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -362,13 +376,13 @@ text-align: center;
 }
 
 @media only screen and (min-width: 1280px) {
-    .formulario--1{
+    .formulario--1 {
         display: flex;
     }
-    
+
 }
 
-.formulario--1 label{
+.formulario--1 label {
 
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -377,26 +391,27 @@ text-align: center;
 
 }
 
-.img-preview-con{
+.img-preview-con {
     display: none;
 }
+
 @media only screen and (min-width: 1280px) {
-    .img-preview-con{
+    .img-preview-con {
         display: flex;
-        
+
 
     }
-    
+
 }
 
 /* Fin formulario */
 
-.footer-c{
+.footer-c {
     grid-area: footer-c;
     background-color: black;
     padding-top: 10px;
     padding-bottom: 2px;
- 
+
 
 }
 
@@ -409,81 +424,17 @@ text-align: center;
 /* Fin de contacnto */
 /* Principio de Preguntas frecuentes */
 
-#contenedor-p{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 150px 280px 280px 210px 220px;
-    grid-template-areas:
 
-        "cabep"
-        "comp"
-        "rec"
-        "mediosp"
-        "footp"
 
-    ;
-    display: flex;
-    
-
+a {
+    background-color: powderblue;
+    transition: background-color .5s;
 }
 
-.cabecera-p{
-    background-color: blueviolet;
-    grid-area: cabep;
- 
-  
-}
-.cabecera-p_container{
-    padding: 10px;
-    text-align: center;
-  
+a:hover {
+    background-color: gold;
 }
 
-.cabecera-p_container a{
-    display: flex;
-
-}
-
-.img-preview-p{
-
-    height: 100px;
-}
-/* fin de cabecera */
-
-.comprar{
-    background-color: brown;
-    grid-area: comp;
-    text-align: center;
-    border: 1px solid black;
-    padding: 10px;
-   
-    
-}
-
-.comprar h3{
-    margin-bottom: 10px;
-}
-
-.recibir{
-    background-color: blue;
-    grid-area: rec;
-    text-align: center;
-    border: 1px solid black;
-    padding: 5px;
-}
-
-.recibir h3{
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
-
-.mediosp{
-    background-color: aqua;
-    grid-area: mediosp;
-    text-align: center;
-}
-
-.footer-p{
-    background-color: black;
-    grid-area: footp;
+.distri-c {
+    background-color: lightgray;
 }
